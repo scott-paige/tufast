@@ -1,0 +1,1 @@
+worker: python trump_bot.py
