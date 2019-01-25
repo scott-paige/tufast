@@ -43,7 +43,7 @@ async def on_message(message):
     if message.content.startswith('!headlines'):
         url = ('https://newsapi.org/v2/top-headlines?'
                 'country=us&'
-                'apiKey={}'.format(ps.environ['NEWS_API']))
+                'apiKey={}'.format(os.environ['NEWS_API']))
         r = requests.get(url)
         top_headlines = r.json()
         num_articles = top_headlines['totalResults']
