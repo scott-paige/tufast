@@ -1,5 +1,5 @@
 import constants.commands as commands
-from .weatherBot import WeatherBot
+from classes import *
 
 class BotFactory(object):
     @staticmethod
