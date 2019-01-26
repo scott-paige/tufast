@@ -1,1 +1,1 @@
-worker: python trump_bot.py
+worker: python index.py

@@ -1,3 +1,4 @@
 weather = '!weather'
-trumpme = '!Trumpme'
+trumpme = '!trumpme'
 cat = '!cat'
+dog = '!dog'
