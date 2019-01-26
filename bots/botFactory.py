@@ -5,12 +5,16 @@ class BotFactory(object):
     @staticmethod
     def createBot(commandType):
             if commandType == commands.weather:
-                return weatherBot()
+<<<<<<< HEAD
+                return WeatherBot()
             if commandType == commands.trumpme:
-                return trumpBot()
+                return TrumpBot()
             if commandType == commands.cat:
-                return catBot()
+                return CatBot()
             if commandType == commands.dog:
-                return dogBot()
+                return DogBot()
 
 
+=======
+                return WeatherBot()
+>>>>>>> master
