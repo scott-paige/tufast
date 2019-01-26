@@ -1,5 +1,6 @@
 import requests
 from constants import urls
+from bots import CommonBot
 
 class TrumpBot(CommonBot):
     def action(self):
