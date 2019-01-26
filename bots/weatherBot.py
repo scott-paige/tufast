@@ -1,4 +1,4 @@
-import urllib.request as request
+import requests
 
 from .commonBot import CommonBot
 from constants import urls
@@ -12,4 +12,4 @@ class WeatherBot(CommonBot):
         else:
             url = urls.weatherBaseURL + '?format=1'
 
-        return request.urlopen(url).read().decode('utf-8')
+        return requests.get(url).text

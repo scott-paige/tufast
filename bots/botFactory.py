@@ -6,4 +6,3 @@ class BotFactory(object):
     def createBot(commandType):
             if commandType == commands.weather:
                 return WeatherBot()
-
