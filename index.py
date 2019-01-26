@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from constants import commands
 from bots.botFactory import BotFactory
 from utils.getArgs import getArgs
+from classes import *
 
 load_dotenv()
 
