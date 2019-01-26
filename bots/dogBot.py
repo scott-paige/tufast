@@ -1,4 +1,5 @@
 import requests
+import json
 from constants import urls
 
 class CatBot(CommonBot):
