@@ -1,6 +1,6 @@
 import requests
 
-from bots import CommonBot
+from bots.commonBot import CommonBot
 from constants import urls
 
 class WeatherBot(CommonBot):

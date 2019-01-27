@@ -1,5 +1,9 @@
 import constants.commands as commands
-from classes import *
+from bots.classes.dogBot import DogBot
+from bots.classes.catBot import CatBot
+from bots.classes.newsBot import NewsBot
+from bots.classes.weatherBot import WeatherBot
+from bots.classes.trumpBot import TrumpBot
 
 class BotFactory(object):
     @staticmethod
@@ -12,5 +16,5 @@ class BotFactory(object):
                 return CatBot()
             if commandType == commands.dog:
                 return DogBot()
-
-
+            if commandType == commands.news:
+                return NewsBot()

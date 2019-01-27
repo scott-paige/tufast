@@ -1,7 +1,7 @@
 import requests
 import json
-from constants import urls
-from bots import CommonBot
+from constants.urls import catPicURL
+from bots.commonBot import CommonBot
 
 class CatBot(CommonBot):
     def action(self):
