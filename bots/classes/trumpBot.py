@@ -1,6 +1,7 @@
 import requests
-from constants import urls
-from bots import CommonBot
+import json
+from constants.urls import trumpQuoteURL
+from bots.commonBot import CommonBot
 
 class TrumpBot(CommonBot):
     def action(self):
@@ -11,4 +12,5 @@ class TrumpBot(CommonBot):
         quote = parsed_json['value']
         source = parsed_json['_embedded']['source'][0]['url']
         msg = '{}\n\n{}'.format(quote,source) 
+        
         return msg

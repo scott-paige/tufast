@@ -1,9 +1,9 @@
 import requests
 import json
-from constants import urls
-from bots import CommonBot
+from constants.urls import dogPicURL
+from bots.commonBot import CommonBot
 
-class CatBot(CommonBot):
+class DogBot(CommonBot):
     def action(self):
         url = dogPicURL
         r = requests.get(url)
