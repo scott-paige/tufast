@@ -1,15 +1,17 @@
 import requests
 
 from bots.commonBot import CommonBot
-from constants import urls
+from constants.urls import weatherBaseURL
+from constants import params
+
 
 class WeatherBot(CommonBot):
     def action(self):
         city = ' '.join(self._args)
 
-        if len(city):
-            url = urls.weatherBaseURL + '/%s?format=4'%city
+        if city:
+            url = weatherBaseURL + params.getWeatherByCity%city
         else:
-            url = urls.weatherBaseURL + '?format=1'
+            url = weatherBaseURL + params.getWeatherByGeolocation
 
         return requests.get(url).text
