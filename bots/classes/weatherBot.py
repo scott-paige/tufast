@@ -10,8 +10,8 @@ class WeatherBot(CommonBot):
         city = ' '.join(self._args)
 
         if city:
-            url = weatherBaseURL + params.getWeatherByCity%city
+            url = f'{weatherBaseURL}{params.getWeatherByCity%city}'
         else:
-            url = weatherBaseURL + params.getWeatherByGeolocation
+            url = f'{weatherBaseURL}{params.getWeatherByGeolocation}'
 
         return requests.get(url).text
