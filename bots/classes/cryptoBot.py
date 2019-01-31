@@ -1,5 +1,4 @@
 import requests
-import discord
 
 from constants.urls import coinGeckoBaseURL
 from bots.commonBot import CommonBot
