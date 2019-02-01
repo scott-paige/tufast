@@ -4,6 +4,7 @@ from bots.classes.catBot import CatBot
 from bots.classes.newsBot import NewsBot
 from bots.classes.weatherBot import WeatherBot
 from bots.classes.trumpBot import TrumpBot
+from bots.classes.cryptoBot import CryptoBot
 
 class BotFactory(object):
     @staticmethod
@@ -18,3 +19,5 @@ class BotFactory(object):
                 return DogBot()
             if commandType == commands.news:
                 return NewsBot()
+            if commandType == commands.crypto:
+                return CryptoBot()
